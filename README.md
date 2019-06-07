@@ -4,7 +4,7 @@ Fork from https://labs.consol.de/nagios/check_oracle_health/index.html
 
 ---
 
-This plugin is used to monitor a variety of oracle database metrics.
+This plugin is used to monitor a variety of oracle database metrics. 
 
 * For instructions on installing this plugin for use with Nagios,
   see below. In addition, generic instructions for the GNU toolchain
@@ -23,14 +23,14 @@ You can check for the latest plugin at:
   http://www.consol.com/opensource/nagios/check-oracle-health
 
 The documentation in this README covers only the most common features.
-To view the full documentation and examples, go to
+To view the full documentation and examples, go to 
   http://www.consol.com/opensource/nagios/check-oracle-health or
   http://www.consol.de/opensource/nagios/check-oracle-health
 
 Send mail to gerhard.lausser@consol.de for assistance.
 Please include the OS type/version and the Perl DBI/DBD version
 that you are using.
-Also, run the plugin with the '-vvv' option and provide the resulting
+Also, run the plugin with the '-vvv' option and provide the resulting 
 version information.  Of course, there may be additional diagnostic information
 required as well.  Use good judgment.
 
@@ -62,7 +62,7 @@ me at http://www.nagios-portal.de
 
    Simply running ./configure will be sufficient to create a check_oracle_health
    script which you can customize later.
-
+      
 
 2) "Compile" the plugin with the following command:
 
@@ -78,7 +78,7 @@ me at http://www.nagios-portal.de
 
 	make install
 
-   The installation procedure will attempt to place the plugin in a
+   The installation procedure will attempt to place the plugin in a 
    'libexec/' subdirectory in the base directory you specified with
    the --prefix argument to the configure script.
 
@@ -100,7 +100,7 @@ me at http://www.nagios-portal.de
 
 --mode=<operation mode>
    This parameter tells the plugin what it should check.
-   The list of known modes may grow frequently. Please look at
+   The list of known modes may grow frequently. Please look at 
    http://www.consol.com/opensource/nagios/check-oracle-health for a list
    of features.
 
@@ -114,18 +114,18 @@ me at http://www.nagios-portal.de
 --critical=<critical threshold>
   If the metric is out of this range, the plugin returns a critical.
 
-
+   
 
 
 ##How to prepare the database for monitoring
 
 create user nagios identified by 'whatever';
-grant create session to nagios;
-grant select any dictionary to nagios;
-grant select on V_$SYSSTAT to nagios;
-grant select on V_$INSTANCE to nagios;
-grant select on V_$LOG to nagios;
-grant select on SYS.DBA_DATA_FILES to nagios;
+grant create session to nagios; 
+grant select any dictionary to nagios; 
+grant select on V_$SYSSTAT to nagios; 
+grant select on V_$INSTANCE to nagios; 
+grant select on V_$LOG to nagios; 
+grant select on SYS.DBA_DATA_FILES to nagios; 
 grant select on SYS.DBA_FREE_SPACE to nagios;
 
 on 8.x the user must be granted the SELECT_CATALOG_ROLE
