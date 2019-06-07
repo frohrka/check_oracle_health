@@ -333,7 +333,6 @@ sub nagios {
 
 sub disconnect() {
   my $self = shift;
-  printf("meine test function");
   $self->trace(sprintf "disconnecting DBD %s",
       $self->{handle} ? "with handle" : "without handle");
   $self->{handle}->disconnect() if $self->{handle};
