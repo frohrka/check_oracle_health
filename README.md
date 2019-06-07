@@ -1,4 +1,4 @@
-#check_oracle_health Nagios Plugin
+# check_oracle_health Nagios Plugin
 
 Fork from https://labs.consol.de/nagios/check_oracle_health/index.html
 
@@ -40,7 +40,7 @@ me at http://www.nagios-portal.de
 
 
 
-##How to "compile" the check_oracle_health script.
+## How to "compile" the check_oracle_health script.
 
 
 1) Run the configure script to initialize variables and create a Makefile, etc.
@@ -87,7 +87,7 @@ me at http://www.nagios-portal.de
    the correct paths to the new plugin.
 
 
-##Command line parameters
+## Command line parameters
 
 --connect=<the oracle connect string>
    This is what you would also use with tnsping and sqlplus.
@@ -117,7 +117,7 @@ me at http://www.nagios-portal.de
    
 
 
-##How to prepare the database for monitoring
+## How to prepare the database for monitoring
 
 create user nagios identified by 'whatever';
 grant create session to nagios; 
